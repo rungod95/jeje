@@ -1,32 +1,70 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f9;
-}
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-section img {
-    width: 100%;
-    animation: fadeIn 5s;
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
+    background: #add8e6;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden; /* Para evitar el desplazamiento de la página con partículas */
 }
+
+#content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.greeting, #congrats-message, #messages {
+    font-size: 3em;
+    color: #333;
+    font-family: 'Dancing Script', 'Great Vibes', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #f4b042;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    transition: transform 0.3s;
+}
+
+#start-button:hover {
+    transform: scale(1.1);
+}
+
 #image-slider {
+    width: 80%;
+    height: 60%;
+    background-size: cover;
+    margin-top: 20px;
+    border: 5px solid #f4b042;
+    border-radius: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+#particle-background {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    position: relative;
+    background-color: #add8e6;
+    z-index: 0;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
