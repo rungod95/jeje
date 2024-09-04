@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regalo de Cumpleaños</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="image-slider"></div>
+    <div id="particle-background"></div>
+    <div id="content">
+        <h1 class="greeting">¡Bienvenida a tu día!</h1>
+        <button id="start-button">Pincha aquí</button>
+        <div id="image-slider" class="hidden"></div>
+        <h2 class="hidden" id="congrats-message">¡Felicidades!</h2>
+        <div id="messages" class="hidden"></div>
+    </div>
     <audio id="background-music" autoplay loop>
-        <source src="path_to_your_song.mp3" type="audio/mpeg">
+        <source src="assets/Carolina Durante - Joderse La Vida (Video Oficial).mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
     </audio>
+    <script src="particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
