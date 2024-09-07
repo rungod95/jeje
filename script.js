@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        'assets/path_to_image1.jpg',
-        'assets/path_to_image2.jpg',
-        'assets/path_to_image3.jpg'
+        'assets/1.PNG',
+        'assets/2.PNG',
+        'assets/3.png',
+        'assets/4.png',
+        'assets/5.png',
+        'assets/6.png',
+        'assets/7.png' ,
     ];
     const messages = [
         '¡Te amo!',
