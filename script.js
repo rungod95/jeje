@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
         'assets/4.png',
         'assets/5.png',
         'assets/6.png',
-        'assets/7.png' ,
+        'assets/7.png',
     ];
     const messages = [
         '¡Te amo!',
         '¡Eres increíble!',
         '¡Que ganas de seguir compartiendo años contigo!'
     ];
-    
+
     let currentIndex = 0;
     let currentMessageIndex = 0;
 
@@ -21,12 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const congratsMessage = document.getElementById('congrats-message');
     const messageDisplay = document.getElementById('messages');
     const startButton = document.getElementById('start-button');
+    const backgroundMusic = document.getElementById('background-music');
 
     startButton.addEventListener('click', function() {
         startButton.classList.add('hidden');
         slider.classList.remove('hidden');
         congratsMessage.classList.remove('hidden');
         messageDisplay.classList.remove('hidden');
+        backgroundMusic.play();  // Reproduce la música cuando se hace clic
         changeImage();
         showMessages();
     });
