@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        'assets/1.PNG',
-        'assets/2.PNG',
+        'assets/1.png',
+        'assets/2.png',
         'assets/3.png',
         'assets/4.png',
         'assets/5.png',
