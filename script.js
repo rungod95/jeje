@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const messages = [
         '¡Te amo!',
         '¡Eres increíble!',
-        '¡Que todos tus deseos se hagan realidad!'
+        '¡Que ganas de seguir compartiendo años contigo!'
     ];
     
     let currentIndex = 0;
